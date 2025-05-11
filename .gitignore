@@ -24,3 +24,4 @@ future-articles-images/
 
 # jetbrains setting folder
 .idea/
+.vercel
