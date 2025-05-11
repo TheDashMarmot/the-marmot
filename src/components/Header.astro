@@ -9,7 +9,7 @@ import HeaderLink from './HeaderLink.astro';
 			</a>
 		</h2>
 		<details class="menu">
-			<summary class="burger" aria-label="Toggle menu">
+			<summary class="hamburger" aria-label="Toggle menu">
 				<span class="line"></span>
 				<span class="line"></span>
 				<span class="line"></span>
@@ -85,8 +85,12 @@ import HeaderLink from './HeaderLink.astro';
   margin-left: auto;
 }
 
+.menu .nav-links a {
+  font-size: 0.9rem;
+}
+
 /* Hamburger icon */
-.burger {
+.hamburger {
   display: inline-flex;
   flex-direction: column;
   gap: 4px;
@@ -95,7 +99,7 @@ import HeaderLink from './HeaderLink.astro';
   border: none;
   padding: 0.5em;
 }
-.burger .line {
+.hamburger .line {
   width: 24px;
   height: 2px;
   background: #222;
