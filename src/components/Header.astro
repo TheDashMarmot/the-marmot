@@ -4,7 +4,8 @@ import HeaderLink from './HeaderLink.astro';
 <header>
 	<nav>
 		<h2 class="brand">
-			<a href="/">
+			<a href="/" class="logo-title">
+				<img src="/banner-images/logo_simple.png" alt="Dash Marmot Logo" class="logo" />
 				<span class="site-title">The Dash Marmot</span>
 			</a>
 		</h2>
@@ -25,7 +26,7 @@ import HeaderLink from './HeaderLink.astro';
 	header {
 		margin: 0;
 		padding: 0 1em;
-		background: white;
+		background: rgb(251,251,251);
 		box-shadow: 0 2px 8px rgba(var(--black), 5%);
 		min-height: 3rem;
 	}
@@ -74,6 +75,12 @@ import HeaderLink from './HeaderLink.astro';
     margin: 0 auto 1rem auto;
     filter: grayscale(100%) contrast(120%);
   }
+  .logo-title {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+  height: auto;
+}
 
   .site-title {
     font-size: 1.2rem;
