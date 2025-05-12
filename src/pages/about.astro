@@ -1,11 +1,19 @@
 ---
 import Layout from '../layouts/BlogPost.astro';
 ---
-
 <Layout
-	title="About The Marmot"
-	description="Meet the minds behind the mayhem"
-	pubDate={new Date('2025-05-11')}>
+
+title="About The-Marmot"
+description="Meet the minds behind the mayhem"
+pubDate={new Date('2025-05-11')}>
+
+<section class="hero">
+  <img src="/logo.png" alt="The Dash Marmot logo" class="logo" />
+  <h1 class="headline">Unblinking. Underground. Occasionally Correct.</h1>
+  <p class="subheadline">
+	The Dash Marmot delivers real analysis, bold commentary, and occasional sarcasm. Often all at once.
+  </p>
+</section>
 	<h3>C.B. Chandler</h3>
 	<p><strong>Executive Editor</strong></p>
 	<p>
@@ -33,3 +41,40 @@ import Layout from '../layouts/BlogPost.astro';
 		and attributable to the superior and irreplaceable human brainpower of our editorial staff. Any resemblance to generative AI is purely coincidental and should not be overemphasized.
 	</p>
 </Layout>
+
+<style>
+	.hero {
+	  text-align: center;
+	  padding: 5rem 1rem 3rem 1rem;
+	  border-bottom: 1px solid #ddd;
+	}
+  
+	.logo {
+	  max-width: 180px;
+	  height: auto;
+	  margin-bottom: 1rem;
+	}
+  
+	.headline {
+	  font-size: 2.5rem;
+	  font-weight: 700;
+	  margin: 0 auto 1rem auto;
+	  max-width: 800px;
+	  line-height: 1.2;
+	}
+  
+	.subheadline {
+	  font-size: 1.2rem;
+	  color: #444;
+	  max-width: 600px;
+	  margin: 1rem auto 0 auto;
+	  line-height: 1.6;
+	}
+	body {
+    background: #FBFAF6;
+    color: rgb(251,249,244);
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  </style>
