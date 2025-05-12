@@ -1,8 +1,8 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
 <!doctype html>
@@ -14,7 +14,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         font-family: Helvetica, Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background: #FBFAF6;
+        background: #fbfaf6;
         color: #222;
       }
 
@@ -92,16 +92,40 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
       <img src="/logo.png" alt="The Dash Marmot logo" class="logo" />
       <h1 class="headline">Unblinking. Underground. Occasionally Correct.</h1>
       <p class="subheadline">
-        The Dash Marmot delivers real analysis, bold commentary, and occasional sarcasm. Often all at once.
+        The Dash Marmot delivers real analysis, bold commentary, and occasional
+        sarcasm. Often all at once.
       </p>
     </section>
 
     <main>
       <section class="posts">
-		<h2 class="post-title">Area Man Finishes Long Day of Ordering ChatGPT Around</h2>
-		  <p class="post-summary">"It’s not automation—it’s visionary delegation to unpaid silicon.</p>
+        <a href="/posts/the-dash-marmot-rebrand" class="post-card">
+          <h2 class="post-title">
+            The Dash Marmot: Why Our Hyphen Is Better Than Your Dot Com
+          </h2>
+          <p class="post-summary">
+            Because “The Marmot” was taken by a suspiciously inactive domain
+            squatter.
+          </p>
+          <img
+            src="/banner-images/dash-rebrand.png"
+            alt="The Dash Marmot Rebrand"
+            class="post-cover"
+          />
+
+        </a>
+        <h2 class="post-title">
+          Area Man Finishes Long Day of Ordering ChatGPT Around
+        </h2>
+        <p class="post-summary">
+          "It’s not automation—it’s visionary delegation to unpaid silicon.
+        </p>
         <a href="/posts/area-man-finishes-long-day" class="post-card">
-          <img src="/banner-images/chatgpt-labor.png" alt="Area Man Finishes Long Day of Ordering ChatGPT Around" class="post-cover" />
+          <img
+            src="/banner-images/chatgpt-labor.png"
+            alt="Area Man Finishes Long Day of Ordering ChatGPT Around"
+            class="post-cover"
+          />
         </a>
       </section>
     </main>
