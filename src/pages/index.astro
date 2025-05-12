@@ -51,6 +51,38 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         max-width: 800px;
         margin: 0 auto;
       }
+
+      .posts {
+        padding: 2rem 1rem;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .post-card {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        margin-bottom: 2rem;
+      }
+
+      .post-cover {
+        width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-bottom: 1rem;
+      }
+
+      .post-title {
+        font-size: 1.75rem;
+        margin: 0.5rem 0;
+      }
+
+      .post-summary {
+        font-size: 1rem;
+        color: #555;
+        margin: 0;
+      }
     </style>
   </head>
 
@@ -65,8 +97,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     </section>
 
     <main>
-      <!-- Here we’ll eventually list articles -->
-      <p><em>Welcome to <strong>the-marmot.com</strong>. News with a marmot’s eye view.</em></p>
+      <section class="posts">
+		<h2 class="post-title">Area Man Finishes Long Day of Ordering ChatGPT Around</h2>
+		  <p class="post-summary">"It’s not automation—it’s visionary delegation to unpaid silicon.</p>
+        <a href="/posts/area-man-finishes-long-day" class="post-card">
+          <img src="/banner-images/chatgpt-labor.png" alt="Area Man Finishes Long Day of Ordering ChatGPT Around" class="post-cover" />
+        </a>
+      </section>
     </main>
 
     <Footer />
